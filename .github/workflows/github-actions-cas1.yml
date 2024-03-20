@@ -1,6 +1,6 @@
 name: GitHub Actions cas1 Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-on: [workflow_dispatch]
+on: push
 env:
   VARIABLE_2: variable workflow
 jobs:
@@ -12,3 +12,20 @@ jobs:
       - run: echo "Variable 2 entorn-> ${{ env.VARIABLE_2 }}."
         env:
            VARIABLE_2: variable tasque
+
+  Explore-GitHub-Actions1:
+      runs-on: ubuntu-latest
+      steps:
+        - name: upload output file
+          uses: actions/upload-artifact@v4
+          with:
+            name: output-log-file
+            path: text.txt
+            
+  Explore-GitHub-Actions2:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Download a single artifact
+          uses: actions/upload-artifact@v4
+          with:
+            name: output-log-file
