@@ -5,4 +5,4 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Variable 1 entorn ${{ vars.VARIABLE_1 }}."
+      - run: echo "Variable 1 entorn "
