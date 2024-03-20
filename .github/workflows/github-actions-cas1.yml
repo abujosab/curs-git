@@ -16,6 +16,7 @@ jobs:
   Explore-GitHub-Actions1:
       runs-on: ubuntu-latest
       steps:
+        - uses: actions/checkout@v4
         - name: upload output file
           uses: actions/upload-artifact@v4
           with:
