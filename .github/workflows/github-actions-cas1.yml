@@ -1,6 +1,6 @@
 name: GitHub Actions cas1 Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-on: push
+on: workflow_dispatch
 env:
   VARIABLE_2: variable workflow
 jobs:
