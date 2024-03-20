@@ -29,7 +29,7 @@ jobs:
       needs: Explore-GitHub-Actions1
       steps:
         - name: Download a single artifact
-          uses: actions/upload-artifact@v4
+          uses: actions/download-artifact@v4
           with:
             name: output-log-file
         - run: cat text.txt
