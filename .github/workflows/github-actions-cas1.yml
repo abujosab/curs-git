@@ -9,3 +9,6 @@ jobs:
     steps:
       - run: echo "Variable 1 entorn-> ${{ vars.VARIABLE_1 }}."
       - run: echo "Variable 2 entorn-> ${{ env.VARIABLE_2 }}."
+      - run: echo "Variable 2 entorn-> ${{ env.VARIABLE_2 }}."
+        env:
+           VARIABLE_2: variable tasque
